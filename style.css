@@ -1,0 +1,39 @@
+main {
+  background-color: deepskyblue;
+}
+form {
+  background-color: lightskyblue;
+}
+
+input {
+  height: 50px;
+  
+}
+
+.btn-warning {
+  font-size: 150%;
+}
+
+.utility_1 {
+  margin-top: 100px;
+}
+
+i {
+  font-size: 300%;
+}
+
+hr {
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    /* יישור לשמאל  */
+  .card {
+    align-items: start;
+  }
+  /* יישור טקסט בפיסקה לשמאל */
+  .plft{ 
+    text-align: initial;
+  }
+
+}

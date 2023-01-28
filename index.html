@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap responsive</title>
+    <!-- קישור של בוטסטרפ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- קישור לאייקונים של בוטסטראפ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- קישור דף עיצוב שלי -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar with logo -->
+    <div class="container">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./imges/ehlogoblack.png" alt="mylogo" width="50" height="50">
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- כותרת וטופס עם רקע כחול -->
+        <div class="container-fluid p-5 text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>
+                            Write Your Main Headline Here
+                        </h1>
+                        <h3>
+                            Your intrguiing call to action goes here...
+                        </h3>
+                        <!-- כפתור טלפון וקו לבן שמוצג רק במסך קטן מתחת ל 768 -->
+                        <div class="container-fluid d-md-block d-md-none">
+                            <button type="button" class="btn btn-warning bi bi-telephone-fill text-light w-100 my-4 shadow rounded">
+                                Call
+                                Now</button>
+                            <hr class="border-3 opacity-100 my-3">
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt odit
+                            perferendis officia quae? Recusandae voluptatibus aliquid quod repellendus necessitatibus
+                            ullam maiores autem blanditiis, nihil reprehenderit iusto architecto nulla error.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo a facilis consectetur
+                            dignissimos, voluptatibus rem eaque quae dolores dolorem.
+                        </p>
+                    </div>
+
+                    <!-- טופס -->
+                    <div class="col-md-5">
+
+                        <form id="getuch" class="shadow" action="/action_page.php">
+                            <div class="row p-4 g-1">
+                                <h3>
+                                    Interested? Let us hear from you
+                                </h3>
+                                <label for="fname">Name:*</label><br>
+                                <input type="fname" id="fname"  name="fname" value=""><br>
+
+                                <label for="email">Email:*</label><br>
+                                <input type="email" id="email" name="email" value=""><br>
+
+                                <label for="Phone">Phone:*</label><br>
+                                <input type="Phone" id="Phone" name="Phone" value=""><br><br>
+
+                                <input class="btn btn-warning text-light mt-4 shadow" type="submit" value="GET FREE QUOTE">
+                                <p>
+                                    Your privacy is paramount - we will not share your information
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- חלק שני - כרטיסיות -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-5">
+                <div class="col-md">
+
+                    <!-- כרטיסייה ראשונה -->
+                    <div class="card border-0">
+                        <div class="h1">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                        </div>
+                        <h2 class="card-title my-3">Your Main Adventage</h2>
+                        <p class="plft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda
+                            consequuntur,
+                            quasi incidunt atque doloribus reiciendis, dolorem sequi ipsum ex necessitatibus odio
+                            eligendi
+                            perferendis quam at magnam esse quisquam architecto.
+                        </p>
+                    </div>
+                </div>
+                <!-- כרטיסייה שנייה -->
+                <div class="col-md">
+                    <div class="card border-0">
+                        <div class="h1">
+                            <i class="bi bi-gift"></i>
+                        </div>
+                        <h2 class="card-title my-3">Special Offer</h2>
+                        <p class="plft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda
+                            consequuntur,
+                            quasi incidunt atque doloribus reiciendis, dolorem sequi ipsum ex necessitatibus odio
+                            eligendi
+                            perferendis quam at magnam esse quisquam architecto.
+                        </p>
+                    </div>
+                </div>
+                <!-- כרטיסייה שלישית -->
+                <div class="col-md ">
+                    <div class="card border-0 ">
+                        <div class="h1">
+                            <i class="bi bi-person "></i>
+                        </div>
+                        <h2 class="card-title my-3">About Your Buisness</h2>
+                        <p class="plft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda
+                            consequuntur,
+                            quasi incidunt atque doloribus reiciendis, dolorem sequi ipsum ex necessitatibus odio
+                            eligendi
+                            perferendis quam at magnam esse quisquam architecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- חלק שלישי - CEO -->
+    <section class="p-3 bg-light">
+        <div class="container mt-5">
+            <div class="row text-center justify-content-evenly">
+
+                <div class="col-md-8">
+                    <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle mb-4 shadow-lg"
+                        alt="portrait img">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet error facere omnis placeat
+                        quaerat. Quae, ut soluta perferendis ipsa labore in quasi repudiandae harum eum cupiditate quos
+                        animi, laboriosam iste perspiciatis officia iusto? Similique quo doloremque, autem quos
+                        reprehenderit repellendus officia corrupti asperiores nesciunt. Perspiciatis odit enim molestias
+                        fugit.
+                    </p>
+                    <!-- קו שנעלם במסכים קטנים -->
+                    <div class="text-center my-3 d-none d-md-block">
+                        <hr class="col-2 border-3 opacity-100">
+                    </div>
+                    <p>
+                        John Doe <br>CEO, Company Name
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer with links inside -->
+    <footer class="text-center py-3 ">
+        <!-- יראה אך ורק במסך גדול ובמסך קטן ייעלם -->
+        <div class="container d-none d-md-block">
+            <div class="row d-inline">
+                <a class="text-decoration-none text-black" href="#">All rights reserved</a>|
+                <a class="text-decoration-none text-black" href="#">Legal Agreement</a>|
+                <a class="text-decoration-none text-black" href="#">Privacy Policy</a>|
+                <a class="text-decoration-none text-black" href="#">Contact Us</a>
+            </div>
+        </div>
+        <!-- שורה בפוטר שתופיע במסך קטן ותיעלם או תתחלף במסך גדול -->
+        <div class="container d-md-block d-md-none">
+            <p>
+                Proudly powered by Pagewiz &copyAll rightsreserved
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
